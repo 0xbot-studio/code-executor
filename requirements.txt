@@ -1,0 +1,3 @@
+aiohttp
+prometheus-client
+psutil

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "code-executor"
+version = "0.1.0"
+description = ""
+authors = ["hanyh2004 <hanyh2004@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.11.7"
+prometheus-client = "^0.21.0"
+psutil = "^6.1.0"
+tenacity = "^9.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

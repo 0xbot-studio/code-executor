@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  code-executor:
+    build: .
+    environment:
+      - MAIN_PORT=18080
+      - METRICS_PORT=18000
+      - SERVER_HOST=0.0.0.0
+    ports:
+      - "${MAIN_PORT:-18080}:18080"
+      - "${METRICS_PORT:-18000}:18000"
+      -
+    restart: unless-stopped
+
+    volumes:
+      - ./logs:/app/logs
